@@ -15,6 +15,10 @@ class SkyBlockToast(val icon: ItemStack?, val title: Component, val text: Compon
 
     private val lines = run {
         val lines = mutableListOf<FormattedCharSequence>()
+        if (McFont.width(text) < 144) {
+            lines.add(text.visualOrderText)
+            return@run lines
+        }
         McFont.split(text, 144).forEach {
             lines.add(it)
         }
