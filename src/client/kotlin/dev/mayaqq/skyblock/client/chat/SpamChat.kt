@@ -1,6 +1,5 @@
 package dev.mayaqq.skyblock.client.chat
 
-import dev.mayaqq.skyblock.client.SkyblockClient
 import dev.mayaqq.skyblock.client.config.Config
 import dev.mayaqq.skyblock.client.utils.pushPop
 import net.minecraft.network.chat.Component
@@ -100,7 +99,6 @@ object SpamChat {
 
     @Subscription
     fun onChatReceived(event: ChatReceivedEvent.Pre) {
-        SkyblockClient.info("Chat received: {}", event.coloredText)
         if (!Config.enabled) return
 
         if (removingRegex != null && removingRegex!!.find(event.text) != null) {
