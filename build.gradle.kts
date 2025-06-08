@@ -4,9 +4,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    alias(libs.plugins.loom)
+    alias(libs.plugins.fabric.loom)
     alias(libs.plugins.kotlin)
-    alias(libs.plugins.publish)
 }
 
 version = project.property("mod_version") as String
@@ -54,47 +53,41 @@ repositories {
 
 dependencies {
     minecraft(libs.minecraft)
+
     mappings(loom.layered {
         officialMojangMappings()
-        parchment(libs.parchment)
+        parchment(libs.minecraft.parchment)
     })
-    modImplementation(libs.fabric)
-    modImplementation(libs.kotlin.lang)
 
-    modImplementation(libs.fapi)
+    modImplementation(libs.bundles.fabric)
 
-    include(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.core)
 
-    modImplementation(libs.modmenu)
-    include(libs.sbapi)
-    modImplementation(libs.sbapi)
+    includeModImplementation(libs.skyblock.api)
 
     modImplementation(libs.resourceful.config)
     modImplementation(libs.resourceful.config.kotlin)
 
-    modImplementation(libs.meowdding.lib)
-    include(libs.meowdding.lib)
+    includeModImplementationBundle(libs.bundles.meowdding)
 
-    modImplementation(libs.olympus)
-    include(libs.olympus)
+    includeModImplementation(libs.olympus)
 
-    modRuntimeOnly(libs.devauth)
+    modRuntimeOnly(libs.bundles.runtime.mods)
 }
 
 tasks.processResources {
     inputs.property("version", project.version)
-    inputs.property("minecraft_version", libs.versions.minecraft.get())
-    inputs.property("loader_version", libs.versions.fabric.get())
-    inputs.property("kotlin_loader_version", libs.versions.kotlin.lang.get())
+    inputs.property("minecraft_version", libs.versions.minecraft.asProvider().get())
+    inputs.property("loader_version", libs.versions.fabric.loader.get())
+    inputs.property("kotlin_loader_version", libs.versions.fabric.language.kotlin.get())
     filteringCharset = "UTF-8"
 
     filesMatching("fabric.mod.json") {
         expand(
             "version" to project.version,
-            "minecraft_version" to libs.versions.minecraft.get(),
-            "loader_version" to libs.versions.fabric.get(),
-            "kotlin_loader_version" to libs.versions.kotlin.lang.get()
+            "minecraft_version" to libs.versions.minecraft.asProvider().get(),
+            "loader_version" to libs.versions.fabric.loader.get(),
+            "kotlin_loader_version" to libs.versions.fabric.language.kotlin.get(),
         )
     }
 }
@@ -114,19 +107,23 @@ tasks.jar {
     }
 }
 
-publishMods {
-    file.set(tasks.remapJar.get().archiveFile)
-    modLoaders.add("fabric")
-    type.set(STABLE)
-
-    modrinth {
-        accessToken = providers.environmentVariable("MODRINTH_TOKEN")
-        projectId = "vUfww66P"
-        minecraftVersions.add("1.21.5")
-
-        requires { slug = "fabric-api" }
-        requires { slug = "fabric-language-kotlin" }
-        requires { slug = "hypixel-mod-api" }
-        requires { slug = "resourceful-config" }
-    }
+@Suppress("unused")
+fun DependencyHandlerScope.includeImplementationBundle(bundle: Provider<ExternalModuleDependencyBundle>) = bundle.get().forEach {
+    includeImplementation(provider { it })
 }
+
+fun DependencyHandlerScope.includeModImplementationBundle(bundle: Provider<ExternalModuleDependencyBundle>) = bundle.get().forEach {
+    includeModImplementation(provider { it })
+}
+
+fun <T : ExternalModuleDependency> DependencyHandlerScope.includeImplementation(dependencyNotation: Provider<T>) =
+    with(dependencyNotation.get()) {
+        include(this)
+        modImplementation(this)
+    }
+
+fun <T : ExternalModuleDependency> DependencyHandlerScope.includeModImplementation(dependencyNotation: Provider<T>) =
+    with(dependencyNotation.get()) {
+        include(this)
+        modImplementation(this)
+    }
