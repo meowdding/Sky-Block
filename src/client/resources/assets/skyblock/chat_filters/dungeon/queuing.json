@@ -1,0 +1,6 @@
+{
+    "regex": "Queuing... \\\\(Attempt [\\s\\S]{3}\\\\)",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

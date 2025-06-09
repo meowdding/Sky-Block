@@ -1,0 +1,6 @@
+{
+    "regex": "You may only buy up to [\\s\\S]* of this item each day!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

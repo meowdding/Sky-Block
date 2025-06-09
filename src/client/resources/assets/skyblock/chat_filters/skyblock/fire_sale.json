@@ -1,0 +1,6 @@
+{
+    "regex": "A FIRE SALE [\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

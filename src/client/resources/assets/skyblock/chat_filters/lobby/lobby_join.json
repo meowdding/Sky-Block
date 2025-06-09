@@ -1,0 +1,6 @@
+{
+    "regex": "(?:>>> )?[\\s\\S]*joined the lobby!(?: <<<)?",
+    "predicate": {
+        "type": "builtin:server/hypixel"
+    }
+}

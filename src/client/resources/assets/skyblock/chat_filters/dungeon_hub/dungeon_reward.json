@@ -1,0 +1,6 @@
+{
+    "regex": "RARE REWARD! .+ found a .+ in their .+!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

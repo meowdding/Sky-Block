@@ -1,0 +1,6 @@
+{
+    "regex": "You can only use this item in dungeons!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

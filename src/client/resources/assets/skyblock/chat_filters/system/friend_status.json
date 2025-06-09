@@ -1,0 +1,11 @@
+{
+    "regex": "(Friend) > ([\\s\\S]*)",
+    "predicate": {
+        "type": "builtin:server/hypixel"
+    },
+    "toast": {
+        "duration": "4000",
+        "title": "{1}",
+        "body": "{2}"
+    }
+}

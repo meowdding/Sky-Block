@@ -1,0 +1,6 @@
+{
+    "regex": "Latest update: SkyBlock [\\s\\S]* CLICK",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

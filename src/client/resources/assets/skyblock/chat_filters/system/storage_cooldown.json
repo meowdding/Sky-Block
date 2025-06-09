@@ -1,0 +1,6 @@
+{
+    "regex": "You may only use this menu after 4s on the server!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

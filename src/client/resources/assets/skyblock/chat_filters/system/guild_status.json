@@ -1,0 +1,6 @@
+{
+    "regex": "(Guild) > ([\\s\\S]*)",
+    "predicate": {
+        "type": "builtin:server/hypixel"
+    }
+}

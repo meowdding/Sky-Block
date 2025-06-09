@@ -1,0 +1,6 @@
+{
+    "regex": "Click a player on a matching team to feed them this cake! This isn't a player!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

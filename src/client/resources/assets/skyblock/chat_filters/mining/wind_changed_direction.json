@@ -1,0 +1,6 @@
+{
+    "regex": "The wind has changed direction!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

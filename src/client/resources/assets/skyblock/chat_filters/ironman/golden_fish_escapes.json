@@ -1,0 +1,6 @@
+{
+    "regex": "^The Golden Fish escapes your hook",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

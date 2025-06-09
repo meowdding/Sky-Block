@@ -1,0 +1,6 @@
+{
+    "regex": "You can't deposit this little!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

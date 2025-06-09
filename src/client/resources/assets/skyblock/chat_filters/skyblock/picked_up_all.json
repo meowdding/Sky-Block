@@ -1,0 +1,6 @@
+{
+    "regex": "^You picked up all items from your[\\s\\S]*!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

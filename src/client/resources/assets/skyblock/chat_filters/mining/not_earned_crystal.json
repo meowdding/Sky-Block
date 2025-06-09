@@ -1,0 +1,6 @@
+{
+    "regex": "^You have not found this Crystal yet! Place it here when you have found it!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

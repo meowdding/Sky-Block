@@ -1,0 +1,6 @@
+{
+    "regex": "There are no hidden Chocolate Rabbit Eggs nearby! Try again later!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

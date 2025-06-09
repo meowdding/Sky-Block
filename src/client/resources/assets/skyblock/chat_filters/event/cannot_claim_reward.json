@@ -1,0 +1,6 @@
+{
+    "regex": "^You cannot currently claim this reward!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

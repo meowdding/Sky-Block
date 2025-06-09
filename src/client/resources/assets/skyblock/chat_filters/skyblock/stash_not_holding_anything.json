@@ -1,0 +1,6 @@
+{
+    "regex": "Your stash isn't holding any items or materials!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

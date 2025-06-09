@@ -1,0 +1,6 @@
+{
+    "regex": "Your Pickobulus didn't destroy any blocks!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

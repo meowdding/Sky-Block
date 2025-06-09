@@ -1,0 +1,6 @@
+{
+    "regex": "You have selected the [\\s\\S]* Dungeon Class!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

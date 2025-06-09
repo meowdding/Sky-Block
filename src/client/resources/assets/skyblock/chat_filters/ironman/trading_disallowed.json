@@ -1,0 +1,6 @@
+{
+    "regex": "You can't trade with players while playing on this type of profile!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

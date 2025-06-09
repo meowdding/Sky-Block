@@ -1,0 +1,6 @@
+{
+    "regex": "The Golden Fish is resisting...",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

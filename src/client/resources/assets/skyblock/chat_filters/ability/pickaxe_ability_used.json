@@ -1,0 +1,6 @@
+{
+    "regex": "You used your [\\s\\S]* Pickaxe Ability!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

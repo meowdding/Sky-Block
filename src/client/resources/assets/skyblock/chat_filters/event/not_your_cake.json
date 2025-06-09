@@ -1,0 +1,6 @@
+{
+    "regex": "This Century Cake Slice is for .*, sorry!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

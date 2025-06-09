@@ -1,0 +1,6 @@
+{
+    "regex": "You uncovered a treasure chest!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "regex": "Cannot use this item here!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

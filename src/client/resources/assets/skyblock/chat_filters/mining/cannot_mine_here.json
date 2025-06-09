@@ -1,0 +1,6 @@
+{
+    "regex": "A magical force surrounding this area prevents you from breaking blocks![\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

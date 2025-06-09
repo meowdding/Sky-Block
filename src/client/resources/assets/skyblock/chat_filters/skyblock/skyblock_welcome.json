@@ -1,0 +1,6 @@
+{
+    "regex": "Welcome to Hypixel SkyBlock!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

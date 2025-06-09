@@ -9,6 +9,7 @@ fabric-language-kotlin = "1.13.0+kotlin.2.1.0"
 fabric-loom = "1.10-SNAPSHOT"
 fabric-api = "0.119.5+1.21.5"
 
+ksp = "2.1.20-2.0.0"
 kotlin = "2.1.20"
 kotlin-coroutines-core = "1.10.1"
 
@@ -20,6 +21,7 @@ olympus = "1.3.0"
 skyblock-api = "1.0.0-beta.100"
 
 meowdding-lib = "1.0.12"
+meowdding-ktcodecs = "1.0.19"
 
 modmenu = "14.0.0-rc.2"
 devauth = "1.2.1"
@@ -42,12 +44,14 @@ olympus = { module = "earth.terrarium.olympus:olympus-fabric-1.21.5", version.re
 skyblock-api = { module = "tech.thatgravyboat:skyblock-api-1.21.5", version.ref = "skyblock-api" }
 
 meowdding-lib = { module = "me.owdding.meowdding-lib:meowdding-lib-1.21.5", version.ref = "meowdding-lib" }
+meowdding-ktcodecs = { module = "me.owdding.ktcodecs:KtCodecs", version.ref = "meowdding-ktcodecs" }
 
 devauth = { module = "me.djtheredstoner:DevAuth-fabric", version.ref = "devauth" }
 modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
 
 [bundles]
 meowdding = ["meowdding-lib"]
+meowdding-processing = ["meowdding-ktcodecs"]
 runtime-mods = ["devauth", "modmenu"]
 skyblock-api = ["skyblock-api"]
 fabric = ["fabric-api", "fabric-language-kotlin", "fabric-loader"]
@@ -55,3 +59,4 @@ fabric = ["fabric-api", "fabric-language-kotlin", "fabric-loader"]
 [plugins]
 fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

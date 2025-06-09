@@ -1,0 +1,6 @@
+{
+    "regex": "^Maxed the Supercraft to[\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

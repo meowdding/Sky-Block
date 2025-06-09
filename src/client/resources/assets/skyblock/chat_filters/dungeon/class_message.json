@@ -1,0 +1,6 @@
+{
+    "regex": "\\[(Mage|Healer|Berserk|Archer|Tank)] [\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

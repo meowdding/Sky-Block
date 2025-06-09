@@ -1,0 +1,6 @@
+{
+    "regex": "Your inventory is full!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

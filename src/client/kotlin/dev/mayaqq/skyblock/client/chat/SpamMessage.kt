@@ -88,7 +88,7 @@ enum class SpamMessage(
         MessageCategory.SYSTEM,
     ),
     WATCHDOG_REPORT(
-        """[\s\S]*(\\\[WATCHDOG ANNOUNCEMENT\\]|Watchdog has banned|Staff have banned an additional|Blacklisted modifications are a bannable offense!)[\s\S]*""",
+        """[\s\S]*(\[WATCHDOG ANNOUNCEMENT]|Watchdog has banned|Staff have banned an additional|Blacklisted modifications are a bannable offense!)[\s\S]*""",
         MessageCategory.SYSTEM,
     ),
     STORAGE_COOLDOWN(
@@ -288,9 +288,9 @@ enum class SpamMessage(
     ),
     CHEST_LOCKPICKED(
         """▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬""",
-        MessageCategory.MINING,
+        MessageCategory.MINING, // TODO
         MultilineData("""▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬""", true, true),
-        SkyBlockIsland.CRYSTAL_HOLLOWS
+        SkyBlockIsland.CRYSTAL_HOLLOWS,
     ),
     TREASURE_CHEST(
         """You uncovered a treasure chest!""",

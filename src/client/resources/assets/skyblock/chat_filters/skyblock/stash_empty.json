@@ -1,0 +1,6 @@
+{
+    "regex": "^Your [\\s\\S]* stash is empty!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

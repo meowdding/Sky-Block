@@ -1,0 +1,6 @@
+{
+    "regex": "Warping...",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "regex": "You can't use the Auction House while playing on your current profile type!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

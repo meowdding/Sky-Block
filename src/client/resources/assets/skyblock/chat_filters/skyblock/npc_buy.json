@@ -1,0 +1,6 @@
+{
+    "regex": "You bought [\\s\\S]* x\\d+ for [\\d.]+[\\dA-Za-z]* Coins!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "regex": "Unknown destination! Check the Fast Travel menu to view options!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

@@ -6,6 +6,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     alias(libs.plugins.fabric.loom)
     alias(libs.plugins.kotlin)
+    alias(libs.plugins.ksp)
 }
 
 version = project.property("mod_version") as String
@@ -61,14 +62,16 @@ dependencies {
 
     modImplementation(libs.bundles.fabric)
 
-    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.bundles.meowdding.processing)
+    ksp(libs.bundles.meowdding.processing)
 
-    includeModImplementation(libs.skyblock.api)
+    implementation(libs.kotlinx.coroutines.core)
 
     modImplementation(libs.resourceful.config)
     modImplementation(libs.resourceful.config.kotlin)
 
-    includeModImplementationBundle(libs.bundles.meowdding)
+    includeModImplementationBundle(libs.bundles.meowdding.asProvider())
+    includeModImplementationBundle(libs.bundles.skyblock.api)
 
     includeModImplementation(libs.olympus)
 
@@ -105,6 +108,11 @@ tasks.jar {
     from("LICENSE") {
         rename { "${it}_${project.base.archivesName}" }
     }
+}
+
+ksp {
+    arg("meowdding.project_name", "SkyBlock")
+    arg("meowdding.package", "dev.mayaqq.skyblock.generated")
 }
 
 @Suppress("unused")

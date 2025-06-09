@@ -1,0 +1,6 @@
+{
+    "regex": "New day! Your Sky Mall buff changed!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

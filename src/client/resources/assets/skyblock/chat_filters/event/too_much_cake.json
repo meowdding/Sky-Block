@@ -1,0 +1,6 @@
+{
+    "regex": "This person has had too much cake today!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

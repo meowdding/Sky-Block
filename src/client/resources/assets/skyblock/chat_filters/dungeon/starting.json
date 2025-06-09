@@ -1,0 +1,6 @@
+{
+    "regex": "Starting in \\d second(s)?.",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

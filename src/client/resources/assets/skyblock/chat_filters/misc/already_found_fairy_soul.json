@@ -1,0 +1,6 @@
+{
+    "regex": "You have already found that Fairy Soul!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

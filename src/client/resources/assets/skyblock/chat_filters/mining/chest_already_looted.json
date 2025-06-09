@@ -1,0 +1,6 @@
+{
+    "regex": "This chest has already been looted.",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

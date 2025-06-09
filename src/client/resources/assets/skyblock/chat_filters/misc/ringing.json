@@ -1,0 +1,6 @@
+{
+    "regex": "✆ RING...(?![\\s\\S]*\\[PICK UP])[\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

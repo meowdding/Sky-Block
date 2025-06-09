@@ -1,0 +1,6 @@
+{
+    "regex": "[\\s\\S]* is now available!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

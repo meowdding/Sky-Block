@@ -1,0 +1,6 @@
+{
+    "regex": "Your [\\s\\S]* stats are doubled because you are the only player using this class!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

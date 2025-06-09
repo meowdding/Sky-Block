@@ -1,0 +1,6 @@
+{
+    "regex": "You have already requested a server! Please wait a bit.",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

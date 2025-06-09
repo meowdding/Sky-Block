@@ -1,0 +1,12 @@
+{
+    "regex": "You earned (\\d+ GEXP) from playing [\\s\\S]*!|You earned (\\d+ GEXP \\+ \\d+ Event EXP) from playing [\\s\\S]*!",
+    "predicate": {
+        "type": "builtin:server/hypixel"
+    },
+    "toast": {
+        "duration": 4000,
+        "title": "§2§lPlaytime Reward",
+        "body": "{1}",
+        "item": "minecraft:golden_apple"
+    }
+}

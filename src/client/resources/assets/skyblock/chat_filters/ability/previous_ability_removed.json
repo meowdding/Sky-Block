@@ -1,0 +1,6 @@
+{
+    "regex": "Your previous [\\s\\S]* was removed!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

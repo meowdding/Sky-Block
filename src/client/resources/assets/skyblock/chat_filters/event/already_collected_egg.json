@@ -1,0 +1,6 @@
+{
+    "regex": "You have already collected this [\\s\\S]* Egg! Try again when it respawns!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

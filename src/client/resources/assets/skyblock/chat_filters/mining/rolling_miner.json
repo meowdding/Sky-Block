@@ -1,0 +1,6 @@
+{
+    "regex": "Rolling miner granted you double drops!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

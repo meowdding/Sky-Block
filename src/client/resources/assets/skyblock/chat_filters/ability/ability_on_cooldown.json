@@ -1,0 +1,6 @@
+{
+    "regex": "^This ability is on cooldown for[\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

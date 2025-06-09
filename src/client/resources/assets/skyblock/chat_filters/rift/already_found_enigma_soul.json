@@ -1,0 +1,6 @@
+{
+    "regex": "You have already found that Enigma Soul!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

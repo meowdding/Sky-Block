@@ -1,0 +1,6 @@
+{
+    "regex": "Depositing coins...",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

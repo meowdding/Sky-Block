@@ -1,0 +1,6 @@
+{
+    "regex": "[\\s\\S]{3}The ([\\s\\S]*) event (starts in 20 seconds!)[\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

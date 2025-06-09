@@ -1,0 +1,6 @@
+{
+    "regex": "No more charges, next one in [\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

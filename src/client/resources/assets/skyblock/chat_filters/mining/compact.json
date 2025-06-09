@@ -1,0 +1,6 @@
+{
+    "regex": "^COMPACT! You found[\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

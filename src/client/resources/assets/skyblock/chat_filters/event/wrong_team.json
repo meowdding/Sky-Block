@@ -1,0 +1,6 @@
+{
+    "regex": "This person is not on the right team! Feed this cake to someone on the .* Team!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

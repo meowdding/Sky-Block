@@ -1,0 +1,11 @@
+{
+    "regex": "(HOPPITY'S HUNT) (A [\\s\\S]* has appeared!)",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    },
+    "toast": {
+        "duration": 4000,
+        "title": "{1}",
+        "body": "{2}"
+    }
+}

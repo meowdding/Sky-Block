@@ -1,0 +1,6 @@
+{
+    "regex": "You have deposited[\\s\\S]*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "regex": "Your [\\s\\S]* has [\\s\\S]* fuel remaining!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

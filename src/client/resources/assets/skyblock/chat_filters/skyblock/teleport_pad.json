@@ -1,0 +1,6 @@
+{
+    "regex": "Warped from the ([\\s\\S]*) Teleport Pad to the ([\\s\\S]*) Teleport Pad!*",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    }
+}

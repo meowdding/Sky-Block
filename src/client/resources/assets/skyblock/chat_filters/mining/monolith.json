@@ -1,0 +1,12 @@
+{
+    "regex": "(MONOLITH!) You found a mysterious Dark Monolith and were rewarded ([\\s\\S]*)!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    },
+    "toast": {
+        "duration": 4000,
+        "title": "{1}",
+        "body": "{2}",
+        "item": "minecraft:dragon_egg"
+    }
+}

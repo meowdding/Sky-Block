@@ -1,0 +1,12 @@
+{
+    "regex": "(ALLOWANCE!) You earned ([\\s\\S]* coins)!",
+    "predicate": {
+        "type": "builtin:hypixel/on_skyblock"
+    },
+    "toast": {
+        "duration": 4000,
+        "title": "{1}",
+        "body": "{2}",
+        "item": "minecraft:gold_ingot"
+    }
+}
