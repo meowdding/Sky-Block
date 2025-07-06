@@ -1,5 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
+import jdk.tools.jlink.resources.plugins
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
@@ -9,7 +10,7 @@ plugins {
     alias(libs.plugins.ksp)
 }
 
-version = project.property("mod_version") as String
+version = project.property("version") as String
 group = project.property("maven_group") as String
 
 base {
